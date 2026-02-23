@@ -410,7 +410,6 @@ integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0
   </div>
 </footer>
 
-
 <script>
 function toggleMenu() {
   document.getElementById("menu").classList.toggle("active");
@@ -426,7 +425,6 @@ function closeDrawer(){
   drawer.classList.remove('open');
   overlay.classList.remove('active');
 }
-
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 

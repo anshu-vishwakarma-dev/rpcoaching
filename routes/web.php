@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
+use App\Http\Controllers\ApiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,3 +40,18 @@ Route::get('/Math',[MyController::class,'Math']);
 Route::get('/batch',[MyController::class,'batch']);
 Route::get('/result',[MyController::class,'result']);
 Route::get('/study',[MyController::class,'study']);
+
+// api integration
+// Route moved to api.php
+
+Route::get('/users-page', function () {
+    return view('users_list');
+});
+
+Route::get('/third-party-users', function () {
+    return view('third_party_users');
+});
+
+Route::get('/weather', function () {
+    return view('weather');
+});
